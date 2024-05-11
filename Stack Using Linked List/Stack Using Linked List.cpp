@@ -2,6 +2,12 @@
 using namespace std;
 
 
-class note {
+class Node {
+public:
+	int data;
+	Node* next;
 
+	Node() {
+		next = NULL;
+	}
 };
