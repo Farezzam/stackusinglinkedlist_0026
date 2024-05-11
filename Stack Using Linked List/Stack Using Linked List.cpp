@@ -79,11 +79,11 @@ int main() {
 		case 1:
 			cout << "Enter the value to push: ";
 			cin >> value;
-			stack.push(value);
+			stack.push(value); // Push the entered value onto the stack
 			break;
 		case 2:
 			if (!stack.isEmpty()) {
-				stack.pop();
+				stack.pop(); // Pop the top element from the stack
 			}
 			else {
 				cout << "stack is empty. Cannot pop." << endl;
@@ -91,7 +91,7 @@ int main() {
 			break;
 		case 3:
 			if (!stack.isEmpty()) {
-				stack.peek();
+				stack.peek(); // Get the value of the top element
 			}
 			else {
 				cout << "Stack is empty. No top value." << endl;
